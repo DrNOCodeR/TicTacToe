@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="together.png">
+    <title>Крестики нолики</title>
+    <style>
+        #field td{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            text-align: center;
+            cursor: pointer;
+        }
+        h1{
+            font-size: 4rem;
+            color: black;
+        }
+        button{
+            background-color: #2B2B2B;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: "Calibri";
+            color: #ECECEC;
+            border: 2px solid #686e6e;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:#5c5b5b;
+        }
+        td:hover{
+            background-color:#989090;
+        }
+    </style>
+</head>
+<body style="background-color: #ECECEC; font-family: Calibri;">
+    <h1 id="header" align="center">Крестики нолики</h1>
+    <table id="field" align="center">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <div align="center">
+        <button id="start-button" onclick="startGame()">Начать игру</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
